@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NIID Neo 13 inch Backpack - MyPae</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container navbar">
+            <div class="logo">MyPae</div>
+            <nav>
+                <a href="index.html">หน้าแรก</a>
+                <a href="product.html" class="active">สินค้า</a>
+                <a href="aboutus.html">เกี่ยวกับเรา</a>
+                <a href="contact.html">ติดต่อ</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container" style="margin-top:48px; margin-bottom:48px;">
+        <div
+            style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start; background: #fffdf8; border-radius: 24px; box-shadow: 0 4px 24px rgba(229,57,53,0.08); padding: 36px;">
+            <div style="flex:1 1 320px; min-width:280px; text-align:center;">
+                <div id="product-gallery" style="position:relative; max-width:350px; margin:0 auto;">
+                    <div class="gallery-main-area">
+                        <img id="main-img" src="สินค้า/รูป/niid2.png" alt="NIID Decode Everyday Backpack - Black"
+                            style="width:100%; max-width:350px; height:auto; object-fit:contain; border-radius:16px; background:#fff;">
+                        <!-- ปุ่มเลื่อนซ้าย -->
+                        <button id="prev-img" class="gallery-nav"
+                            style="position:absolute; left:0; top:50%; transform:translateY(-50%); width:36px; height:36px; font-size:2rem; cursor:pointer; z-index:2;">
+                            &#8249;
+                        </button>
+                        <!-- ปุ่มเลื่อนขวา -->
+                        <button id="next-img" class="gallery-nav"
+                            style="position:absolute; right:0; top:50%; transform:translateY(-50%); width:36px; height:36px; font-size:2rem; cursor:pointer; z-index:2;">
+                            &#8250;
+                        </button>
+                    </div>
+                    <!-- แถบ thumbnail -->
+                    <div id="thumbs" style="display:flex; gap:10px; justify-content:center; margin-top:18px;">
+                        <img class="thumb active" src="สินค้า/รูป/niid2.png"
+                            style="width:48px; height:48px; object-fit:contain; border-radius:8px; border:2px solid #e53935; cursor:pointer;">
+                        <img class="thumb" src="สินค้า/รูป/niid2-2.png"
+                            style="width:48px; height:48px; object-fit:contain; border-radius:8px; border:2px solid transparent; cursor:pointer;">
+                        <img class="thumb" src="สินค้า/รูป/niid2-3.png"
+                            style="width:48px; height:48px; object-fit:contain; border-radius:8px; border:2px solid transparent; cursor:pointer;">
+                        <img class="thumb" src="สินค้า/รูป/niid2-4.png"
+                            style="width:48px; height:48px; object-fit:contain; border-radius:8px; border:2px solid transparent; cursor:pointer;">
+                        <img class="thumb" src="สินค้า/รูป/niid2-5.png"
+                            style="width:48px; height:48px; object-fit:contain; border-radius:8px; border:2px solid transparent; cursor:pointer;">
+                    </div>
+                </div>
+            </div>
+            <div style="flex:2 1 340px; min-width:260px;">
+                <h1 style="font-size:2rem; color:#e53935; margin-bottom:12px;">NIID Neo 13 inch Backpack - หลากสี
+                </h1>
+                <!-- แถบไอคอนบริการจัดส่ง (ขนาดย่อ) -->
+                <div style="display: flex; gap: 12px; margin-bottom: 18px;">
+                    <div
+                        style="background: #fafafa; border-radius: 10px; padding: 10px 14px; display: flex; align-items: center; min-width: 140px; border: 1.5px solid #e0e0e0; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+                        <img src="https://cdn-icons-png.flaticon.com/512/104/104678.png" alt="ส่งไว"
+                            style="width:28px; margin-right:8px;">
+                        <div>
+                            <div style="font-weight:bold; color:#222; font-size:1rem;">ส่งไว ส่งทุกวัน</div>
+                            <div style="font-size: 0.85rem; color:#888;">ช้อปครบ 500.- ส่งฟรี</div>
+                        </div>
+                    </div>
+                    <div
+                        style="background: #fafafa; border-radius: 10px; padding: 10px 14px; display: flex; align-items: center; min-width: 140px; border: 1.5px solid #e0e0e0; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" alt="Same Day"
+                            style="width:28px; margin-right:8px;">
+                        <div>
+                            <div style="font-weight:bold; color:#222; font-size:1rem;">ส่งด่วน Same Day</div>
+                            <div style="font-size: 0.85rem; color:#888;">สั่งวันนี้ ได้วันนี้</div>
+                        </div>
+                    </div>
+                    <div
+                        style="background: #fafafa; border-radius: 10px; padding: 10px 14px; display: flex; align-items: center; min-width: 140px; border: 1.5px solid #e0e0e0; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828925.png" alt="3 ชม."
+                            style="width:28px; margin-right:8px;">
+                        <div>
+                            <div style="font-weight:bold; color:#222; font-size:1rem;">ส่งด่วนพิเศษ</div>
+                            <div style="font-size: 0.85rem; color:#888;">ทันใจ ทันใช้ ใน 3 ชม.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- จบแถบไอคอนบริการจัดส่ง -->
+                <ul class="product-detail-list"
+                    style="margin-bottom:18px; color:#333; font-size:1rem; padding-left:18px;">
+                    <li>NIID Neo 13 inch Backpack กระเป๋าเป้สะพายหลัง Backpack รูปทรงล้ำอนาคต ดีไซน์เรียบหรู
+                        มาพร้อมฟังชั่นการใช้งานที่ครบครัน</li>
+                    <li>ตัวกระเป๋าดีไซน์ เปิด/ปิด ใช้งานแบบ Auto-Snap Maglock ปลอดภัยในการใช้งานมากยิ่งขึ้น</li>
+                    <li>ช่องเก็บสัมภาระแบ่งเป็น 3 ช่องใหญ่หลักๆ ทั้งกระเป๋าช่องหน้า ช่องใส่สัมภาระหลักตรงกลาง
+                        และช่องสำหรับใส่ Laptop โดยเฉพาะ</li>
+                    <li>ดีไซน์ Aluminum Adaptive Pivots บริเวณข้อต่อสายสะพาย ช่วยให้การสะพายตัวกระเป๋ามีความ Flexible
+                        ปรับตามการเคลื่อนไหวของร่างกายได้อย่างดี</li>
+                    <li>มีช่องสำหรับการใส่ Macbook / Laptop ขนาด 13 inch หรือขนาดตัวเครื่องที่ใหญ่ไม่เกิน 32.5 cm x 21.5
+                        cm x 2.2 cm</li>
+                </ul>
+                <div style="margin-bottom:18px;">
+                    <span style="color:#aaa; text-decoration:line-through; font-size:1.1rem; margin-right:10px;">
+                        ฿6,990
+                    </span>
+                    <span style="color:#e53935; font-size:1.5rem; font-weight:bold;">
+                        ฿6,571
+                    </span>
+                </div>
+                <a href="https://www.425degree.com/brand/targus-sagano-ecosmart-travel-backpack-15-6-blue.html"
+                    target="_blank"
+                    style="display:inline-block; background:#e53935; color:#fff; padding:12px 36px; border-radius:8px; font-size:1.1rem; font-weight:bold; text-decoration:none; box-shadow:0 2px 8px rgba(0,0,0,0.08); transition:background 0.2s;">สั่งซื้อสินค้า</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- รายละเอียดเพิ่มเติม -->
+    <div class="container" style="max-width: 900px; margin-bottom: 48px;">
+        <div style="background: #fff; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); padding: 28px;">
+            <h2 style="font-size:1.3rem; color:#e53935; margin-bottom:8px;">ข้อมูลทั่วไปเกี่ยวกับสินค้า</h2>
+            <!-- แบบ static -->
+            <div style="color:#444; font-size:1rem; margin-bottom:12px;">
+                <!-- ใส่รายละเอียดเพิ่มเติมที่นี่ เช่น -->
+                - แบรนด์ : NIID<br>
+                - รุ่น :Neo 13 inch Backpack<br>
+                - สี : หลากสี<br>
+                - ขนาดภายนอก : 30 cm x 40 cm x 12.5 cm<br>
+                - น้ำหนัก : 1.153 kg
+            </div>
+            <!-- หรือแบบ textarea สำหรับกรอก -->
+            <!--
+            <textarea rows="5" style="width:100%; border-radius:8px; border:1px solid #ddd; padding:12px; font-size:1rem;" placeholder="เพิ่มรายละเอียดเพิ่มเติม..."></textarea>
+            -->
+            <br>
+            <h2 style="font-size:1.3rem; color:#e53935; margin-bottom:8px;">วัสดุ</h2>
+            <!-- แบบ static -->
+            <div style="color:#444; font-size:1rem; margin-bottom:12px;">
+                <!-- ใส่รายละเอียดเพิ่มเติมที่นี่ เช่น -->
+                - วัสดุภายนอก: เป็นวัสดุหนังสังเคราะห์ Polyurethane ( PU ) ทนทานต่อแดดและทนความชื้นได้ดีกว่าวัสดุหนังแท้
+                ดูแลรักษาง่าย<br>
+                - วัสดุภายใน : เป็นวัสดุผ้า Polyester ที่คงรูปได้ดี ไม่ย้วย ใช้งานได้ยาวนาน และผ้า Spandex
+                ที่ยืดหยุ่นสูง ใส่วัตถุขนาดต่างๆได้อย่างหลากหลาย<br>
+                - วัสดุสายสะพาย : เป็นวัสดุหนังสังเคราะห์ สัมผัสนุ่มและพรีเมี่ยม มีการบุนุ่มภายในตัวสาย
+                ทำให้ีรู้สึกสบายขณะใช้งานได้ดียิ่งขึ้น<br>
+                - ส่วนประกอบอื่นๆของตัวกระเป๋า : Magnet, Steel, Plastic
+            </div>
+            <br>
+            <h2 style="font-size:1.3rem; color:#e53935; margin-bottom:8px;">เงื่อนไขการรับประกัน</h2>
+            <!-- แบบ static -->
+            <div style="color:#444; font-size:1rem; margin-bottom:12px;">
+                <!-- ใส่รายละเอียดเพิ่มเติมที่นี่ เช่น -->
+                - รับประกัน 1 ปีภายใต้เงื่อนไขที่ทางแบรนด์กำหนด (รอยขาด ซิปแตก ตะเข็บหลุด หรือ ตำหนิจากโรงงาน)
+                โดยความเสียหายที่เกิดจากการผลิตและไม่รวมถึงความเสียหายที่เกิดจากการใช้งานผิดประเภท
+                โดยผู้ซื้อต้องเก็บกล่องบรรจุภัณฑ์เพื่อใช้ในการยืนยันในการซื้อสินค้ากับทางร้าน
+            </div>
+            <br>
+            <h2 style="font-size:1.3rem; color:#e53935; margin-bottom:8px;">การทำความสะอาดและดูแลรักษา</h2>
+            <!-- แบบ static -->
+            <div style="color:#444; font-size:1rem; margin-bottom:12px;">
+                <!-- ใส่รายละเอียดเพิ่มเติมที่นี่ เช่น -->
+                - เช็ดทำความสะอาดด้วยผ้าชุบน้ำหมาดๆ และรอให้แห้งในที่ร่มก่อนการใช้งาน<br>
+                - ห้ามใช้สารเคมีในการทำความสะอาด อาจเกิดรอยด่างหรือปฏิกิริยากับสินค้าได้<br>
+                - ควรนำตัวกระเป๋าไปตากแดดอ่อนๆ เพื่อลดกลิ่นอับของตัวกระเป๋าบ้างเมื่อมีโอกาสครับ
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">MyPae</div>
+            <div class="footer-copy">
+                &copy; 2025 MyPae. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script>
+        // filepath: d:\เว็บไซต์MyPae\targus1.html
+        const images = [
+            "สินค้า/รูป/niid2.png",
+            "สินค้า/รูป/niid2-2.png",
+            "สินค้า/รูป/niid2-3.png",
+            "สินค้า/รูป/niid2-4.png",
+            "สินค้า/รูป/niid2-5.png"
+        ];
+        let current = 0;
+        const mainImg = document.getElementById('main-img');
+        const thumbs = document.querySelectorAll('#thumbs .thumb');
+
+        function showImg(idx, direction = 'right') {
+            if (idx === current) return;
+            // ลบคลาสแอนิเมชันเดิม
+            mainImg.classList.remove('gallery-img-animate', 'gallery-img-animate-reverse');
+            // บังคับรีเฟรช DOM เพื่อให้แอนิเมชันเล่นซ้ำได้
+            void mainImg.offsetWidth;
+            // ใส่คลาสแอนิเมชัน
+            if (direction === 'right') {
+                mainImg.classList.add('gallery-img-animate');
+            } else {
+                mainImg.classList.add('gallery-img-animate-reverse');
+            }
+            current = idx;
+            mainImg.src = images[idx];
+            thumbs.forEach((t, i) => t.style.border = i === idx ? "2px solid #e53935" : "2px solid transparent");
+            thumbs.forEach((t, i) => t.classList.toggle('active', i === idx));
+        }
+
+        thumbs.forEach((thumb, idx) => {
+            thumb.addEventListener('click', () => showImg(idx, idx > current ? 'right' : 'left'));
+        });
+        document.getElementById('prev-img').onclick = function () {
+            let next = (current - 1 + images.length) % images.length;
+            showImg(next, 'left');
+        };
+        document.getElementById('next-img').onclick = function () {
+            let next = (current + 1) % images.length;
+            showImg(next, 'right');
+        };
+
+        // ป้องกันปุ่มค้างหลัง focus (เช่นกดปุ่มแล้ว tab หรือคลิก)
+        document.querySelectorAll('.gallery-nav').forEach(btn => {
+            btn.addEventListener('blur', function () {
+                document.querySelector('.gallery-main-area').classList.remove('force-show-nav');
+            });
+            btn.addEventListener('mousedown', function (e) {
+                e.preventDefault();
+                this.blur();
+            });
+        });
+    </script>
+    <style>
+        /* กรอบแกลเลอรี่หลัก */
+        #product-gallery {
+            position: relative;
+            max-width: 350px;
+            margin: 0 auto;
+        }
+
+        /* กรอบรวมภาพหลัก+ปุ่ม */
+        .gallery-main-area {
+            position: relative;
+            background: #fff;
+            border-radius: 24px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            padding: 24px 0;
+            transition: box-shadow 0.2s;
+            overflow: hidden;
+        }
+
+        /* ปุ่มเลื่อน */
+        .gallery-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 36px;
+            height: 36px;
+            font-size: 2rem;
+            color: #e53935;
+            background: none !important;
+            border: none;
+            box-shadow: none;
+            cursor: pointer;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.25s, color 0.2s;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            outline: none;
+        }
+
+        .gallery-main-area:hover .gallery-nav,
+        .gallery-main-area:focus-within .gallery-nav {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .gallery-nav:focus {
+            outline: none;
+        }
+
+        .gallery-nav:hover {
+            color: #b71c1c;
+        }
+
+        #prev-img.gallery-nav {
+            left: 10px;
+        }
+
+        #next-img.gallery-nav {
+            right: 10px;
+        }
+
+        /* กรอบ thumbnail */
+        #thumbs {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 28px;
+            background: none;
+        }
+
+        .gallery-img-animate {
+            animation: slideFromRight 0.6s cubic-bezier(.22, 1, .36, 1) both;
+        }
+
+        .gallery-img-animate-reverse {
+            animation: slideFromLeft 0.6s cubic-bezier(.22, 1, .36, 1) both;
+        }
+
+        @keyframes slideFromRight {
+            from {
+                opacity: 0;
+                transform: translateX(80px) scale(0.97);
+                filter: blur(2px);
+            }
+
+            60% {
+                opacity: 1;
+                transform: translateX(-8px) scale(1.01);
+                filter: blur(0.5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0) scale(1);
+                filter: blur(0);
+            }
+        }
+
+        @keyframes slideFromLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-80px) scale(0.97);
+                filter: blur(2px);
+            }
+
+            60% {
+                opacity: 1;
+                transform: translateX(8px) scale(1.01);
+                filter: blur(0.5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0) scale(1);
+                filter: blur(0);
+            }
+        }
+
+        /* filepath: d:\เว็บไซต์MyPae\targus1.html */
+        .product-detail-list li {
+            margin-bottom: 12px;
+        }
+
+        .product-detail-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .product-detail-list ul {
+            margin-top: 6px;
+            margin-bottom: 6px;
+            padding-left: 20px;
+            list-style-type: circle;
+            font-size: 0.97em;
+        }
+
+        .product-detail-list ul li {
+            margin-bottom: 4px;
+        }
+    </style>
+    <script>
+        // ป้องกันปุ่มค้างหลัง focus (เช่นกดปุ่มแล้ว tab หรือคลิก)
+        document.querySelectorAll('.gallery-nav').forEach(btn => {
+            btn.addEventListener('blur', function () {
+                // เมื่อปุ่มสูญเสียโฟกัส ให้ trigger mouseleave ที่ .gallery-main-area
+                document.querySelector('.gallery-main-area').classList.remove('force-show-nav');
+            });
+            btn.addEventListener('mousedown', function (e) {
+                // ป้องกันปุ่มค้าง focus หลังคลิก
+                e.preventDefault();
+                this.blur();
+            });
+        });
+    </script>
+</body>
+
+</html>

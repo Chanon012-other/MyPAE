@@ -1,0 +1,449 @@
+:root {
+    --main-font: 'Sarabun', sans-serif;
+    --main-bg: #f5f5f5;
+    --main-color: #222;
+    --primary: #e53935;
+    --primary-dark: #c62828;
+    --header-height: 70px;
+    --container-max: 1200px;
+    --section-gap: 50px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--main-font);
+    background: linear-gradient(135deg, #fbeee6 0%, #e3f0ff 100%);
+    color: var(--main-color);
+    zoom: 1.2;
+    /* ขยายทุกอย่าง 120% */
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
+    padding: 0 0 0 0;
+}
+
+.logo {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #e53935;
+    letter-spacing: 1px;
+}
+
+nav a {
+    margin-left: 32px;
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #e53935;
+}
+
+/* Hero Slider */
+.hero {
+    background: #e53935;
+    overflow: hidden;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero .container {
+    max-width: var(--container-max);
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    padding: 0;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+    height: 300px;
+    /* หรือความสูงที่ต้องการ */
+}
+
+.slide {
+    flex: 0 0 100%;
+    width: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    /* เปลี่ยนพื้นหลังเป็นโปร่งใส */
+    color: #fff;
+    border: none;
+    font-size: 2.5rem;
+    padding: 0 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    transition: color 0.2s;
+    /* เปลี่ยน transition เป็น color */
+    user-select: none;
+}
+
+.slide-btn:hover {
+    color: var(--primary);
+    /* เปลี่ยนลูกศรเป็นสีแดงเมื่อ hover */
+    background: transparent;
+    /* คงความโปร่งใส */
+}
+
+.hero .prev {
+    left: 16px;
+}
+
+.hero .next {
+    right: 16px;
+}
+
+.hero .container {
+    position: relative;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin: 60px 0 30px 0;
+    color: var(--main-color);
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 36px;
+    margin-bottom: 60px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: box-shadow 0.2s, transform 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 32px rgba(229, 57, 53, 0.18);
+    transform: translateY(-6px) scale(1.03);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    /* เปลี่ยนจาก cover เป็น contain */
+    background: #fff;
+    /* เพิ่มพื้นหลังขาว */
+    display: block;
+}
+
+.product-info {
+    padding: 18px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.product-info h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.product-info p {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 12px;
+    flex: 1;
+}
+
+.product-info .price {
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.product-info a {
+    background: #e53935;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.2s;
+    margin-top: 8px;
+}
+
+.product-info a:hover {
+    background: #c62828;
+}
+
+.about,
+.contact {
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px 24px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background: var(--main-color);
+    color: #fff;
+    text-align: center;
+    padding: 18px 0 8px 0;
+    /* ลด padding บน-ล่าง */
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* จัดแนวตั้งตรงกลาง */
+    min-height: 70px;
+    /* ปรับความสูงขั้นต่ำให้ footer ดูสมดุล */
+}
+
+.footer-links {
+    margin: 16px 0 8px 0;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.08rem;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+}
+
+.footer-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e53935;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+    /* ลด margin ล่าง */
+}
+
+/* เพิ่มระยะห่างระหว่าง slider กับสินค้า */
+.hero+.container {
+    margin-top: var(--section-gap);
+}
+
+.products-wrapper {
+    background: #fffdf8;
+    border-radius: 28px;
+    box-shadow: 0 8px 32px rgba(229, 57, 53, 0.10);
+    padding: 48px 36px 40px 36px;
+    max-width: 1200px;
+    margin: 48px auto 56px auto;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 3;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 24px;
+}
+
+.hero-btn {
+    background: #fff;
+    color: #e53935;
+    padding: 12px 32px;
+    border-radius: 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    transition: background 0.2s, color 0.2s;
+}
+
+.hero-btn:hover {
+    background: #e53935;
+    color: #fff;
+}
+
+/* Card Flip Effect */
+.flip-card {
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(.4, 2, .6, 1);
+    transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
+.flip-card-front {
+    z-index: 2;
+    background: #fff;
+}
+
+.flip-card-back {
+    background: #fafafa;
+    transform: rotateY(180deg);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+}
+
+/* ปุ่มรายละเอียด */
+.detail-btn {
+    background: #eee;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.detail-btn:hover {
+    background: #ccc;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 32px;
+    margin: 48px auto 0 auto;
+    max-width: 1000px;
+    align-items: stretch;
+}
+
+.feature-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(229, 57, 53, 0.08);
+    padding: 32px 18px 24px 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.feature-card img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    margin-bottom: 18px;
+    margin-top: 0;
+    display: block;
+}
+
+.feature-card h4 {
+    font-size: 1.18rem;
+    color: #e53935;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.feature-card p {
+    color: #444;
+    font-size: 1rem;
+    margin-bottom: 0;
+}

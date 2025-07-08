@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ติดต่อ | MyPae</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #fbeee6 0%, #e3f0ff 100%);
+            font-family: 'Sarabun', sans-serif;
+        }
+
+        .hero-section {
+            background: linear-gradient(120deg, #e53935 50%, #fff 100%);
+            border-radius: 0 0 40px 40px;
+            color: #fff;
+            padding: 54px 0 40px 0;
+            text-align: center;
+            margin-bottom: 50px;
+            box-shadow: 0 4px 24px rgba(229, 57, 53, 0.08);
+        }
+
+        .hero-section h1 {
+            font-size: 2.6rem;
+            margin-bottom: 10px;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        .hero-section p {
+            font-size: 1.13rem;
+            color: #ffe2d5;
+            margin-bottom: 0;
+            font-weight: 400;
+        }
+
+        .contact-container {
+            max-width: 950px;
+            margin: -42px auto 48px auto;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 2px 24px rgba(229, 57, 53, 0.08);
+            padding: 38px 36px 32px 36px;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .contact-content {
+            font-size: 1.13rem;
+            color: #333;
+            line-height: 1.9;
+            margin-bottom: 38px;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 28px;
+            margin-bottom: 36px;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, #fbeee6 50%, #e3f0ff 100%);
+            border-radius: 14px;
+            box-shadow: 0 2px 8px rgba(229, 57, 53, 0.06);
+            padding: 26px 34px;
+            min-width: 225px;
+            max-width: 320px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-card-icon {
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+            color: #e53935;
+            display: block;
+        }
+
+        .contact-card h4 {
+            margin: 0 0 10px 0;
+            color: #e53935;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .contact-card p,
+        .contact-card a {
+            color: #333;
+            margin: 0;
+            font-size: 1rem;
+            word-break: break-all;
+        }
+
+        .contact-card a {
+            color: #e53935;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form-section-title {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #e53935;
+            font-weight: bold;
+            margin-bottom: 22px;
+            margin-top: 30px;
+        }
+
+        .contact-form {
+            margin: 0 auto;
+            max-width: 400px;
+            background: #fbeee6;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(229, 57, 53, 0.04);
+            padding: 32px 24px 24px 24px;
+        }
+
+        .contact-form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 7px;
+            color: #e53935;
+            font-size: 1.02rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            border: 1px solid #e3e3e3;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 18px;
+            font-size: 1rem;
+            font-family: inherit;
+            background: #fff;
+            box-sizing: border-box;
+            transition: border 0.15s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border: 1.5px solid #e53935;
+            outline: none;
+        }
+
+        .contact-form textarea {
+            min-height: 90px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            background: linear-gradient(90deg, #e53935 60%, #e57373 100%);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 13px 0;
+            width: 100%;
+            font-size: 1.09rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+            box-shadow: 0 2px 8px rgba(229, 57, 53, 0.09);
+        }
+
+        .contact-form button:hover {
+            background: linear-gradient(90deg, #c62828 60%, #f44336 100%);
+        }
+
+        @media (max-width: 900px) {
+            .contact-container {
+                padding: 18px 6px 22px 6px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero-section {
+                padding: 40px 0 30px 0;
+            }
+
+            .hero-section h1 {
+                font-size: 1.6rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 14px;
+            }
+
+            .contact-container {
+                margin-top: -28px;
+            }
+
+            .contact-form {
+                padding: 18px 7px 16px 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container navbar">
+            <div class="logo">MyPae</div>
+            <nav>
+                <a href="index.html">หน้าแรก</a>
+                <a href="product.html">สินค้า</a>
+                <a href="aboutus.html">เกี่ยวกับเรา</a>
+                <a href="contact.html" class="active">ติดต่อ</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero-section">
+        <h1>ติดต่อ MyPae</h1>
+        <p>
+            มีคำถามเกี่ยวกับสินค้า ต้องการปรึกษาหรือแจ้งปัญหา?<br>
+            ทีมงานของเรายินดีให้บริการคุณทุกวัน
+        </p>
+    </section>
+    <div class="contact-container">
+        <div class="contact-content">
+            คุณสามารถติดต่อเราได้หลายช่องทางดังนี้ หรือส่งข้อความผ่านฟอร์มด้านล่าง <br>เราจะรีบตอบกลับโดยเร็วที่สุด!
+        </div>
+        <div class="contact-info">
+            <div class="contact-card">
+                <span class="contact-card-icon">📧</span>
+                <h4>อีเมล</h4>
+                <p><a href="mailto:support@mypae.com">support@mypae.com</a></p>
+            </div>
+            <div class="contact-card">
+                <span class="contact-card-icon">📞</span>
+                <h4>โทรศัพท์</h4>
+                <p>099-999-9999</p>
+            </div>
+            <div class="contact-card">
+                <span class="contact-card-icon">📘</span>
+                <h4>Facebook</h4>
+                <p><a href="https://facebook.com/mypae" target="_blank">facebook.com/mypae</a></p>
+            </div>
+            <div class="contact-card">
+                <span class="contact-card-icon">💬</span>
+                <h4>Line Official</h4>
+                <p><a href="https://lin.ee/xxx" target="_blank">@mypae</a></p>
+            </div>
+        </div>
+        <div class="contact-form-section-title">
+            หรือส่งข้อความหาเราโดยตรง
+        </div>
+        <form class="contact-form"
+            onsubmit="event.preventDefault(); alert('ขอบคุณสำหรับการติดต่อ เราจะรีบตอบกลับโดยเร็วที่สุด!'); this.reset();">
+            <label for="name">ชื่อของคุณ</label>
+            <input type="text" id="name" name="name" required placeholder="กรอกชื่อของคุณ">
+            <label for="email">อีเมลติดต่อกลับ</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com">
+            <label for="message">ข้อความ</label>
+            <textarea id="message" name="message" required placeholder="พิมพ์ข้อความของคุณที่นี่..."></textarea>
+            <button type="submit">ส่งข้อความ</button>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">MyPae</div>
+            <div class="footer-copy">
+                &copy; 2025 MyPae. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

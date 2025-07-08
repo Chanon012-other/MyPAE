@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>เกี่ยวกับเรา | MyPae</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #fbeee6 0%, #e3f0ff 100%);
+            font-family: 'Sarabun', sans-serif;
+        }
+
+        .hero-section {
+            background: linear-gradient(120deg, #e53935 50%, #ff7070 100%);
+            border-radius: 0 0 40px 40px;
+            color: #fff;
+            padding: 54px 0 40px 0;
+            text-align: center;
+            margin-bottom: 50px;
+            box-shadow: 0 4px 24px rgba(229, 57, 53, 0.08);
+        }
+
+        .hero-section h1 {
+            font-size: 2.6rem;
+            margin-bottom: 10px;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        .hero-section p {
+            font-size: 1.13rem;
+            color: #ffe2d5;
+            margin-bottom: 0;
+            font-weight: 400;
+        }
+
+        .about-container {
+            max-width: 1000px;
+            margin: -42px auto 48px auto;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 2px 24px rgba(229, 57, 53, 0.08);
+            padding: 38px 36px 34px 36px;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .about-main-content {
+            display: flex;
+            align-items: center;
+            gap: 44px;
+            flex-wrap: wrap;
+        }
+
+        .about-img {
+            max-width: 330px;
+            border-radius: 16px;
+            box-shadow: 0 4px 14px rgba(229, 57, 53, 0.14);
+            flex-shrink: 0;
+            margin-bottom: 0;
+            border: 5px solid #fbeee6;
+        }
+
+        .about-content {
+            font-size: 1.18rem;
+            color: #333;
+            line-height: 2;
+            flex: 1;
+            margin-top: 0;
+        }
+
+        .about-content ul {
+            margin: 18px 0 0 18px;
+            padding-left: 16px;
+        }
+
+        .about-content ul li {
+            line-height: 1.7;
+            margin-bottom: 7px;
+        }
+
+        .about-highlight {
+            background: linear-gradient(90deg, #e53935 0%, #ff7070 100%);
+            color: #fff;
+            padding: 16px 30px;
+            border-radius: 12px;
+            font-size: 1.13rem;
+            margin: 38px 0 0 0;
+            font-weight: 700;
+            box-shadow: 0 2px 12px rgba(229, 57, 53, 0.06);
+        }
+
+        .about-brands {
+            margin: 36px 0 0 0;
+            text-align: center;
+        }
+
+        .about-brands-title {
+            font-size: 1.2rem;
+            color: #e53935;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .brand-logos {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            background: #fff7f2;
+            border-radius: 10px;
+            padding: 12px 22px;
+            box-shadow: 0 2px 10px rgba(229, 57, 53, 0.04);
+        }
+
+        .brand-logo img {
+            height: 38px;
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .brand-logo span {
+            color: #e53935;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 900px) {
+            .about-main-content {
+                flex-direction: column;
+                gap: 22px;
+            }
+
+            .about-img {
+                margin: 0 auto 8px auto;
+                display: block;
+            }
+
+            .about-container {
+                padding: 22px 8px 28px 8px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero-section {
+                padding: 40px 0 30px 0;
+            }
+
+            .hero-section h1 {
+                font-size: 1.6rem;
+            }
+
+            .about-img {
+                max-width: 95vw;
+            }
+
+            .about-brands {
+                margin-top: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container navbar">
+            <div class="logo">MyPae</div>
+            <nav>
+                <a href="index.html">หน้าแรก</a>
+                <a href="product.html">สินค้า</a>
+                <a href="aboutus.html" class="active">เกี่ยวกับเรา</a>
+                <a href="contact.html">ติดต่อ</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero-section">
+        <h1>เกี่ยวกับ MyPae</h1>
+        <p>
+            ร้านกระเป๋าเป้สำหรับคนรุ่นใหม่ ของแท้ ดีไซน์โดนใจ<br>
+            ส่งไวถึงบ้าน พร้อมบริการหลังการขายที่ใส่ใจ
+        </p>
+    </section>
+    <div class="about-container">
+        <div class="about-main-content">
+            <img class="about-img" src="สินค้า/logo/weblogo.png" alt="MyPae Shop">
+            <div class="about-content">
+                <b>MyPae</b> คือร้านกระเป๋าเป้ที่ก่อตั้งขึ้นจากความหลงใหลในแฟชั่นและการเดินทางของคนรุ่นใหม่
+                เราคัดสรรเฉพาะกระเป๋าแบรนด์แท้ คุณภาพดี ดีไซน์พรีเมียม ให้คุณได้เลือกสรรตามไลฟ์สไตล์ ไม่ว่าจะไปเรียน
+                ทำงาน หรือท่องเที่ยว<br><br>
+                <span style="color:#e53935;font-weight:bold;">สิ่งที่เรายึดมั่น:</span>
+                <ul>
+                    <li>สินค้าทุกชิ้นเป็นของแท้ 100% รับประกันจากแบรนด์ผู้ผลิต</li>
+                    <li>จัดส่งรวดเร็วทั่วไทย พร้อมแพ็คอย่างดี</li>
+                    <li>บริการหลังการขาย ดูแลทุกขั้นตอน ตอบแชทไว</li>
+                    <li>ชำระเงินปลอดภัย รองรับหลายช่องทาง</li>
+                </ul>
+                <div class="about-highlight">
+                    ทีมงาน MyPae ใส่ใจในทุกออเดอร์ เพราะเรารู้ว่ากระเป๋าใบโปรดของคุณสำคัญแค่ไหน<br>
+                    ขอบคุณที่ไว้วางใจให้เราได้เป็นส่วนหนึ่งในทุกการเดินทางของคุณ :)
+                </div>
+            </div>
+        </div>
+        <div class="about-brands">
+            <div class="about-brands-title">
+                แบรนด์ที่เราคัดสรรมาเพื่อคุณ
+            </div>
+            <div class="brand-logos">
+                <div class="brand-logo">
+                    <img src="สินค้า/logo/targus_logo.png" alt="Targus">
+                    <span>Targus</span>
+                </div>
+                <div class="brand-logo">
+                    <img src="สินค้า/logo/stm_logo.jpg" alt="STM">
+                    <span>STM</span>
+                </div>
+                <div class="brand-logo">
+                    <img src="สินค้า/logo/niid_logo.png" alt="NIID">
+                    <span>NIID</span>
+                </div>
+                <div class="brand-logo">
+                    <img src="สินค้า/logo/tomtoc_logo.jpg" alt="Tomtoc">
+                    <span>Tomtoc</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">MyPae</div>
+            <div class="footer-copy">
+                &copy; 2025 MyPae. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
